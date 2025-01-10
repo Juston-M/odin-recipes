@@ -1,22 +1,18 @@
+*/* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}*/
+
 body {
-    background: rgb(36,36,36);
-    background: radial-gradient(circle, rgba(36,36,36,1) 0%, rgba(0,0,0,1) 100%);
+    background-image: url(./images/bg1.jpeg);
+   /* background: rgb(36,36,36);
+    background: radial-gradient(circle, rgba(36,36,36,1) 0%, rgba(0,0,0,1) 100%);*/
     background: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    min-height: 100vh;
-}
-
-.recipe-container {
-    image-resolution: 200px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: stretch;
-    align-content: space-between;
-    justify-content: space-around;
-    
+    min-height: 100vh;;
 }
 
 .title {
@@ -24,22 +20,31 @@ body {
     font-family: "Birthstone", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 5rem;
+    font-size:10rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    text-shadow: 1px 1px 2px black;
-
-}
-.main-img {
-    width: 100%;
-    height: auto;
+    text-shadow: 5px 5px 5px black;
+    flex-wrap: wrap;
 }
 
-.secondary-title,
-.instructions {
-    text-shadow: 1px 1px 2px black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.5rem;
+p {
     color: white;
+    text-align: center;
+    font-size: 5rem;
+    font-family: "Verdana";
+    text-shadow: 5px 5px 5px black;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hw-div img,
+.pc-div img,
+.sa-div img {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .4);
 }
